@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    background: var(--primary);
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Itim;
+}
+
+:root {
+    --primary: #d8ffd4;
+    --secondary: #005730;
+    --black: #000;
+    --white: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.15rem solid var(--secondary);
+    height: 6rem;
+    margin-bottom: 0.3rem;
+}
+
+header div{
+    align-items: center;
+    display: flex;
+}
+
+header div img{
+    background-color: transparent;
+    height: 4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+header nav div form {
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin: 1.7rem;
+}
+
+header nav div form img{
+    background-color: transparent;
+    height: 1.5rem;
+    margin: 0.5rem;
+}
+
+header nav div form input {
+    background-color: transparent;
+    font-size: 1rem;
+    border: #fff;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+}
+
+main {
+    min-height: calc(100vh - 8rem);
+    max-width: 1040px;
+  }
+
+  main#receita section {
+    background-color: transparent;
+    border: 0.2rem solid #d8ffd4;
+    border-radius: 0.5rem;
+  }
+
+  main#receita section h2{
+    border-top: 2rem;
+    align-items: center;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  main#receita section p{
+    border-top: 2rem;
+    align-items: center;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: justify;
+  }
+
+  main#receita section img {
+    border-top: 2rem;
+    height: 15rem;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 0.5rem;
+  }
+
+footer {
+    border-top: 0.3rem solid var(--secondary);
+    height: 1.5rem;
+    border-left: 0;
+}
+
+footer aside {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
