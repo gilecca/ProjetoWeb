@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    background: var(--primary);
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Itim;
+}
+
+:root {
+    --primary: #d8ffd4;
+    --secondary: #005730;
+    --black: #000;
+    --white: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.15rem solid var(--secondary);
+    height: 6rem;
+    margin-bottom: 0.3rem;
+}
+
+header div{
+    align-items: center;
+    display: flex;
+}
+
+header div img{
+    background-color: transparent;
+    height: 4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+header nav div form {
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin: 1.7rem;
+}
+
+header nav div form img{
+    background-color: transparent;
+    height: 1.5rem;
+    margin: 0.5rem;
+}
+
+header nav div form input {
+    background-color: transparent;
+    font-size: 1rem;
+    border: transparent;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+   
+}
+
+main {
+    min-height: calc(100vh - 8rem);
+    min-width: 100vh ;
+    text-decoration: none;
+    justify-items: center;
+    align-items: center;
+  }
+main div{
+
+    justify-items: center;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 20px #8d8b8b;
+    height: 25rem;
+    width: 40rem;
+    margin-top: 7%;
+
+}
+main div h1{
+    background-color: transparent;
+
+}
+
+  main div section {
+    background-color: transparent;
+    justify-items: center;
+    margin-top: 10%;
+  }
+
+  main div section{ 
+    align-items: center;
+    box-shadow: #000;
+    justify-items: center
+  }
+
+
+
+  #cadastro {
+    background-color: var(--white);
+    border: 0.2rem solid #d8ffd4;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  #cadastro h3{
+    background-color: transparent;
+    margin: 2rem;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  #cadastro button{
+    background-color: var(--secondary);
+    margin: 2rem;
+    border-radius: 1rem;
+    text-decoration: underline;
+    align-items: center;
+  }
+
+  #login{
+    background-color: var(--white);
+    border: 0.2rem solid #d8ffd4;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  #login input{
+    align-items: center;
+    background-color: var(--white);
+    text-decoration: none;
+    text-align: justify;
+    font-size: 1rem;
+    border:var(--white);
+    margin-left: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  #login a{
+    border-top: 2rem;
+    height: 15rem;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+  }
+
+footer {
+    border-top: 0.3rem solid var(--secondary);
+    height: 1.5rem;
+    border-left: 0;
+}
+
+footer aside {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
