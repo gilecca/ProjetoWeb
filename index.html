@@ -1,52 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Fit</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div>
+            <a href="index.html">
             <img src="./img/logo.png" alt="Imagem da logo do site">
+            </a>
             <h1>Pet Fit</h1>
         </div>
+
+        <input type="checkbox" id="menu">
         <nav>
+            <label for="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <div>
               <form action="" method="post">
                 <input type="text" placeholder="Busca" name="Pesquisa">
                 <img src="./img/lupa.png" alt="Imagem da lupa">
               </form>
+              <a href="">Login</a>
             </div>
         </nav>
+        
     </header>
-    <main id="index" class="container">
+
+    <main>
+    
+<div>
+    <small>Filtros:</small> 
+<button> Gato</button>
+<button> Cachorro</button>
+<section>
+    
+        <h3>Receitas saudáveis para o seu pet</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v7YnV7Wr7pQ?si=ywH90S46gLGJ9zLa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        </section>
+</div>
+
+
+    <div id="index">
+        <h1>Destaques 🐾</h1>
+
         <section>
-            <h2>Muffin salgado para cães</h2>
+            <a href="receita1.html">
+            <h3>Muffin salgado para cães</h3>
             <img src="./img/receita1.png" alt="Imagem Receita Muffin">
-            <a href="receita1.html">Acessar Receita</a>
+        </a>
+        </section>
+
+        <section>
+            <a href="receita2.html">
+                <h3>Biscoitinho Saudável de Atum</h3>
+                <img src="./img/receita2.png" alt="Imagem Receita Muffin">
+            </a>
         </section>
         <section>
-            <h2>Bolinho de atum</h2>
-            <img src="./img/receita2.png" alt="Imagem Receita Biscoito de Atum">
-            <a href="receita2.html">Acessar Receita</a>
+            <a href="receita3.html">
+                <h3>Pizza para cães</h3>
+                <img src="./img/receita3.png" alt="Imagem Receita Muffin">
+            </a>
+    
         </section>
         <section>
-            <h2>Pizza para cães</h2>
-            <img src="./img/receita3.png" alt="Imagem Receita Pizza">
-            <a href="receita3.html">Acessar Receita</a>
+            <a href="receita4.html">
+                <h3>Muffin salgado para gatos</h3>
+                <img src="./img/receita4.png" alt="Imagem Receita Muffin">
+            </a>
         </section>
-        <section>
-            <h2>Bolinhos Saudáveis de Frango</h2>
-            <img src="./img/receita4.png" alt="Imagem Receita Pizza">
-            <a href="receita4.html">Acessar Receita</a>
-        </section>
+    </div>
+
+   
+        
     </main>
     <footer class="container">
-        <aside>
-            @petfitreceitas
-        </aside>
+        @petfitreceitas
     </footer>
 </body>
 </html>
