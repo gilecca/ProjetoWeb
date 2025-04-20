@@ -28,15 +28,19 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 0.1rem solid var(--secondary);
+  border-bottom: 0.2rem solid var(--secondary);
   height: 5rem;
   background-color: var(--verde);
 
 }
 
+header input#menu {
+  display: none;
+ }
 header div{
     align-items: center;
     display: flex;
+    
 }
 
 
@@ -62,7 +66,6 @@ font-size: x-large;
 
 header nav div a:hover{
   color: #005730;
-  transform: scale(1.2);
 }
 
 
@@ -91,7 +94,6 @@ header nav div form input {
    
 }*/
 
-
 main {
     min-height: calc(100vh - 8rem);
     min-width: 100vh ;
@@ -99,17 +101,27 @@ main {
     justify-items: center;
     align-items: center;
   }
-main div{
 
 
+.login{
     justify-items: center;
     background-color: #ffffff;
     border-radius: 2rem;
     box-shadow: 10px 10px 20px #8d8b8b;
     height: 65vh;
     width: 40vw;
-    margin-top: 7%;
+    margin-top: 5%;
 
+
+}
+.cadastro{
+  justify-items: center;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 20px #8d8b8b;
+  height: 80vh;
+  width: 40vw;
+  margin: 2%;
 
 }
 main div h1{
@@ -180,76 +192,59 @@ main div h1{
     color: var(--secondary);
    
      }
-
-
-  #cadastro {
-    background-color: var(--white);
-    border: 0.2rem solid #d8ffd4;
-    border-radius: 0.5rem;
-    margin: 2rem;
-    text-decoration: none;
-    align-items: center;
-  }
-
-
-  #cadastro h3{
-    background-color: transparent;
-    margin: 2rem;
-    text-decoration: none;
-    align-items: center;
-  }
-
-
-  #cadastro button{
-    background-color: var(--secondary);
-    margin: 2rem;
-    border-radius: 1rem;
-    text-decoration: underline;
-    align-items: center;
-  }
-
-
-  #login{
-    background-color: var(--white);
-    border: 0.2rem solid #d8ffd4;
-    border-radius: 0.5rem;
-    margin: 2rem;
-    text-decoration: none;
-    align-items: center;
-  }
- 
-  #login input{
-    align-items: center;
-    background-color: var(--white);
-    text-decoration: none;
-    text-align: justify;
-    font-size: 1rem;
-    border:var(--white);
-    margin-left: 1rem;
-    border-radius: 1.5rem;
-  }
-
-
-  #login a{
-    border-top: 2rem;
-    height: 15rem;
-    align-items: center;
-    background-color: var(--white);
-    border-radius: 0.5rem;
-  }
-
-
-footer {
-    border-top: 0.3rem solid var(--secondary);
-    height: 1.5rem;
-    border-left: 0;
-}
-
-
-footer aside {
-    max-width: 1040px;
-    margin: 0 auto;
-}
+     
+    @media(max-width: 750px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+      header nav div {
+          display: none;
+      }
+      header{
+        flex-direction: row-reverse;
+      }
+      header nav label {
+          margin-left: 0.5rem;
+          margin-top: 1rem;
+          border: 0.18rem solid var(--secondary);
+          width: 2.5rem;
+          height: 2.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-direction: column;
+          cursor: pointer;
+          border-radius: 0.5rem;
+      }
+     
+     
+      header nav label span {
+          border: 0.1rem solid var(--secondary);
+          width: 1.6rem;
+          height: 0.1rem;
+          border-radius: 20rem;
+      }
+     
+     
+      header nav label span:first-child {
+          margin-top: 0.2rem;
+      }
+     
+     
+      header nav label span:last-child {
+          margin-bottom: 0.2rem;
+      }
+     
+     
+      header input#menu:checked~nav div {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 4rem;
+          left: 0.5rem;
+      }
+    }
 
 
 

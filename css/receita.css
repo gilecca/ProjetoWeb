@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 *{
-    background: var(--primary);
+   /* background: var(--primary);*/
     margin: 0;
     padding: 0;
     outline: 0;
@@ -14,17 +14,24 @@
     --secondary: #005730;
     --black: #000;
     --white: #fff;
-}
-
-header {
+    --verde: #bcdbb9;
+    --cinza:#9c9797;
+ }
+ 
+body{
+    background-color: var(--primary);
+ }
+ 
+ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 0.15rem solid var(--secondary);
-    height: 6rem;
-    margin-bottom: 0.3rem;
-}
-
+    border-bottom: 0.2rem solid var(--secondary);
+    height: 5rem;
+    background-color: var(--verde);
+ 
+ }
+ 
 header div{
     align-items: center;
     display: flex;
@@ -59,40 +66,75 @@ header nav div form input {
     margin-left: 0.5rem;
     border-radius: 1rem;
 }
+header nav div a {
+    color: initial;
+    text-decoration: none;
+    font-size: x-large;
+    }
+    
+    header nav div a:hover{
+      color: #005730;
+    }
+
 
 main {
     min-height: calc(100vh - 8rem);
-    max-width: 1040px;
+    margin-bottom: 1rem;
   }
 
-  main#receita section {
+  main section div {
     background-color: transparent;
-    border: 0.2rem solid #d8ffd4;
-    border-radius: 0.5rem;
+    justify-items: center;
+
   }
 
-  main#receita section h2{
-    border-top: 2rem;
+  main section {
+    margin-left: 1.5rem;
+
+  }
+  main section div h2{
+    margin-top:1rem;
     align-items: center;
-    background-color: transparent;
     text-decoration: none;
   }
   
-  main#receita section p{
+  main section p{
     border-top: 2rem;
     align-items: center;
-    background-color: transparent;
     text-decoration: none;
     text-align: justify;
+    font-size: 1em;
   }
 
-  main#receita section img {
+  main section  p b{
+    border-top: 2rem;
+    align-items: center;
+    text-decoration: none;
+    text-align: justify;
+    font-size: x-large;
+  }
+  main section div img {
     border-top: 2rem;
     height: 15rem;
     align-items: center;
     background-color: transparent;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
   }
+  .estrelas input[type=radio] {
+    display: none;
+  }
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+  }
+  .estrelas h3{
+    margin-top: 1rem;
+
+  }
+
 
 footer {
     border-top: 0.3rem solid var(--secondary);
