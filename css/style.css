@@ -241,18 +241,33 @@ header input#menu {
 }
 
 
-@media(max-width: 750px) {
- main {
-   flex-direction: column;
-   align-items: center;
- }
- header nav div {
+@media(max-width: 500px) {
+   * {
+     box-sizing: border-box;
+   }
+ 
+   body, html {
+     overflow-x: hidden;
+   }
+ 
+   main {
+     flex-direction: column-reverse;
+     align-items: center;
+     display: flex;
+     min-width: 100vw;
+   }
+ 
+   header {
+     flex-direction: row-reverse;
+     width: 100vw;
+     overflow-x: hidden;
+   }
+ 
+   header nav div {
      display: none;
- }
- header{
-   flex-direction: row-reverse;
- }
- header nav label {
+   }
+ 
+   header nav label {
      margin-left: 0.5rem;
      margin-top: 1rem;
      border: 0.18rem solid var(--secondary);
@@ -264,92 +279,65 @@ header input#menu {
      flex-direction: column;
      cursor: pointer;
      border-radius: 0.5rem;
- }
-
-
- header nav label span {
+   }
+ 
+   header nav label span {
      border: 0.1rem solid var(--secondary);
      width: 1.6rem;
      height: 0.1rem;
      border-radius: 20rem;
- }
-
-
- header nav label span:first-child {
+   }
+ 
+   header nav label span:first-child {
      margin-top: 0.2rem;
- }
-
-
- header nav label span:last-child {
+   }
+ 
+   header nav label span:last-child {
      margin-bottom: 0.2rem;
- }
-
-
- header input#menu:checked~nav div {
+   }
+ 
+   header input#menu:checked ~ nav div {
      display: flex;
      flex-direction: column;
      position: absolute;
      top: 4rem;
      left: 0.5rem;
- }
-
- header div img{
-height: 5vh;
-
- }
- header div img h1{
-   height: 5vh;
-
-    }
-
-
- #index {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 0.5rem;
-
-}
-main  {
-  display: flex;
-  flex-direction: column-reverse;
-  min-width: 80vw;
-}
-
-
-#index section {
-   background-color: var(--verde);
-   border: 0.3rem solid var(--secondary);
-   border-radius: 1rem;
-   height: 20rem;
-   width: 20rem;
-    margin-top: 1rem;
-}
+   }
  
+   header div img {
+     height: 10vh;
+   }
+ 
+   header div img h1 {
+     height: 5vh;
+   }
+ 
+   #index {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 0.5rem;
+     width: 100%;
+     padding: 0 1rem;
+   }
+ 
+   #index section,
+   main div:first-child section {
+     background-color: var(--verde);
+     border: 0.3rem solid var(--secondary);
+     border-radius: 1rem;
+     height: auto;
+     width: 80vw;
+     margin: 1rem auto;
+   }
+ 
+   #index section img,
+   main div:first-child section img {
+     width: 70vw;
+     height: auto;
+     max-height: 30vh;
+     display: block;
+     margin: 0 auto;
+   }
 
 
- #index section img {
-   height: 15rem;
-   width: 15rem;
-   background-color: transparent;
-   margin-top: 5%;
- }
-
-
-
-main div:first-child section{
- background-color: var(--verde);
- border: 0.3rem solid var(--secondary);
- border-radius: 1rem;
- height:20em;
- width:20rem;
-margin-top: 1rem;
-margin-right: 5rem;
-
-}
-
-
-main div:first-child  section img{
-width: 40vw;
-height: 30vh;
-}
 }
