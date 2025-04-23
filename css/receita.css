@@ -134,33 +134,33 @@ main {
 
   }
 
-  .salvar-receita {
+ main section div.salvar-receita {
     display: flex;
     align-items: center;
     font-weight: bold;
-    color: #000;
+    color: var(--black);
     cursor: pointer;
     padding: 10px;
     border-radius: 8px;
-    transition: background-color 0.2s ease;
     margin-left: 80%;
     margin-top: 1rem;
+    width: 10vw;
 
   }
 
-  .salvar-receita:hover {
-    background-color: #c0eab8;
+  main section div.salvar-receita {
+    background-color: var(--verde);
   }
 
-  .salvar-receita svg {
+  main section div.salvar-receita svg {
     width: 20px;
     height: 20px;
     margin-right: 8px;
     fill: #000;
-    transition: fill 0.2s ease;
-  }
 
-  .salvar-receita:hover svg {
+  }
+  
+main section div.salvar-receita svg {
     fill: #007f5f;
   }
 

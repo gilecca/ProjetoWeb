@@ -113,9 +113,7 @@ header nav div form input {
 
 header nav div a:hover{
 color: var(--secondary);
-transform: scale(1.2);
-
-
+transform: scale(1.03);
 }
 
 
@@ -135,7 +133,6 @@ main {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 0.5rem;
-   margin-left: auto;
    width: 100vw;
  }
 
@@ -180,7 +177,7 @@ main {
  #index h1 {
    grid-column: 1 / -1;
    text-align: center;
-   padding: 1rem;  
+
  }
 
 
@@ -188,12 +185,6 @@ main {
 
 
 
-
-
-main div small{
-   font-size: 1.2rem;
-   font-weight: bold;
-}
 
 
 main div:first-child section{
@@ -302,11 +293,21 @@ header input#menu {
      left: 0.5rem;
  }
 
+ header div img{
+height: 5vh;
+
+ }
+ header div img h1{
+   height: 5vh;
+
+    }
+
 
  #index {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 0.5rem;
+
 }
 main  {
   display: flex;
@@ -332,7 +333,6 @@ main  {
    background-color: transparent;
    margin-top: 5%;
  }
-
 
 
 
