@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Fit</title>
     <link rel="stylesheet" href="./css/receita.css" media="all">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,14 +25,26 @@
                 <input type="text" placeholder="Busca" name="Pesquisa">
                 <img src="./img/lupa.png" alt="Imagem da lupa">
               </form>
+              <a href="cadastro.html">Cadastro</a>
             </div>
         </nav>
     </header>
 
-    <main id="receita" class="container">
+    <main >
     <section>
+        <div class="salvar-receita">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M6 2a1 1 0 0 0-1 1v19.586l7-7 7 7V3a1 1 0 0 0-1-1H6z"/>
+              </svg>
+            <span>salvar receita</span>
+        </div>
+        <div>
         <h2>Muffin Salgado Para Cachorros</h2><br>
         <img src="./img/receita1.png" alt="Imagem Receita Muffin">
+
+    </div>
+
+
         <p><b>Ingredientes</b><br><br>
 
             * ½ lata de milho cozido.<br><br>
@@ -43,7 +57,7 @@
             * Uma pitada de sal.
             
         </p>
-        <p><br><b>Modo de preparo</b><br>
+        <p><br><b>Modo de preparo</b><br><br>
             
             Bata o milho, os ovos e o azeite no liquidificador até todos os ingredientes ficarem homogêneos.<br>
             Coloque a farinha de aveia aos poucos e vá batendo até que tudo esteja misturado.<br>
@@ -53,7 +67,23 @@
             Leve ao forno e asse por aproximadamente 30 minutos (vai variar conforme o recipiente que você estiver usando).<br>
             Faça o teste do palito e, se sair limpo, está pronto.<br>
             Espere esfriar para tirar da forma e coloque em forminhas de papel para bolos</p>
+            <div class="estrelas">
+                <h3>Avaliação</h3>
+                <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                <label for="cm_star-1"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                <label for="cm_star-2"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                <label for="cm_star-3"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                <label for="cm_star-4"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-5" name="fb" value="5"/>
+              </div>
     </section>
+
+
     </main>
     <footer class="container">
         <aside>
