@@ -84,7 +84,6 @@ main {
 
   main section div {
     background-color: transparent;
-    justify-items: center;
 
   }
 
@@ -133,6 +132,36 @@ main {
   .estrelas h3{
     margin-top: 1rem;
 
+  }
+
+  .salvar-receita {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    margin-left: 80%;
+    margin-top: 1rem;
+
+  }
+
+  .salvar-receita:hover {
+    background-color: #c0eab8;
+  }
+
+  .salvar-receita svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    fill: #000;
+    transition: fill 0.2s ease;
+  }
+
+  .salvar-receita:hover svg {
+    fill: #007f5f;
   }
 
 
