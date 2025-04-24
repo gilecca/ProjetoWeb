@@ -31,8 +31,6 @@ header {
   border-bottom: 0.2rem solid var(--secondary);
   height: 5rem;
   background-color: var(--verde);
-  width: 100vw ;
-
 }
 
 header input#menu {
@@ -69,38 +67,12 @@ header nav div a:hover{
 }
 
 
-  /* header nav div form {
- background-color: 1rem;
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    margin: 1.7rem;
-}
-
-
-header nav div form img{
-    background-color: transparent;
-    height: 1.5rem;
-    margin: 0.5rem;
-}
-
-
-header nav div form input {
-    background-color: transparent;
-    font-size: 1rem;
-    border: transparent;
-    margin-left: 0.5rem;
-    border-radius: 1rem;
-   
-}*/
 
 main {
-    min-height: calc(100vh - 8rem);
-    min-width: 100vw ;
-    text-decoration: none;
-    justify-items: center;
-    align-items: center;
-  }
+  min-height: calc(100vh - 1rem);
+  max-width: calc(100vw - 5rem);
+  justify-items: center;
+}
 
 
 .login{
@@ -109,7 +81,7 @@ main {
     border-radius: 2rem;
     box-shadow: 10px 10px 20px #8d8b8b;
     height: 65vh;
-    width: 40vw;
+    width: 50vw;
     margin-top: 5%;
 
 
@@ -195,8 +167,7 @@ main div h1{
      
     @media(max-width: 500px) {
       main {
-        flex-direction: column;
-        align-items: center;
+        justify-items: center;
       }
       header nav div {
           display: none;

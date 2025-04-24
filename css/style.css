@@ -150,10 +150,9 @@ main {
        background-color: var(--verde);
        border: 0.3rem solid var(--secondary);
        border-radius: 2rem;
-       /*box-shadow: 5px 5px 20px var(--cinza);*/
        height: 45vh;
        width: 25vw;
-       margin: 1rem;
+       margin: 1%;
    
      }
     
@@ -241,7 +240,7 @@ header input#menu {
 }
 
 
-@media(max-width: 500px) {
+@media(max-width: 650px) {
    * {
      box-sizing: border-box;
    }
@@ -326,13 +325,13 @@ header input#menu {
      border: 0.3rem solid var(--secondary);
      border-radius: 1rem;
      height: auto;
-     width: 80vw;
+     width: 70vw;
      margin: 1rem auto;
    }
  
    #index section img,
    main div:first-child section img {
-     width: 70vw;
+     width: 60vw;
      height: auto;
      max-height: 30vh;
      display: block;
